@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --blush: #fff5f7;
+  --clay: #e8b4bc;
+  --ink: #3d2c36;
+  --paw: #7c5cbf;
+}
+
+body {
+  margin: 0;
+  background: var(--blush);
+  color: var(--ink);
+  font-family: var(--font-nunito), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-quicksand), var(--font-nunito), sans-serif;
+}
