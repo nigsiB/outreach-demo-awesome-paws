@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { GroomingServices } from "@/components/GroomingServices";
+
 export default function Page() {
   return (
     <main className="px-4 pb-20">
-      <section className="mx-auto max-w-4xl overflow-hidden rounded-[2rem] bg-white shadow-xl shadow-rose-100/80">
+      <section className="mx-auto max-w-4xl overflow-hidden rounded-[2rem] bg-white shadow-xl shadow-[var(--accent-soft)]">
         <div className="grid gap-0 md:grid-cols-2">
           <div className="relative aspect-square md:aspect-auto md:min-h-[420px]">
             <Image
@@ -17,7 +19,7 @@ export default function Page() {
             />
           </div>
           <div className="flex flex-col justify-center p-8 md:p-10">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--clay)]">Smithbrook Kilns · Cranleigh</p>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--accent)]">Smithbrook Kilns · Cranleigh</p>
             <h1 className="font-display mt-3 text-4xl font-bold leading-tight md:text-5xl">
               A salon built only for cats.
             </h1>
@@ -32,7 +34,7 @@ export default function Page() {
             </ul>
             <Link
               href="/prices"
-              className="mt-8 inline-flex w-fit rounded-full bg-[var(--paw)] px-6 py-3 text-sm font-bold text-white"
+              className="mt-8 inline-flex w-fit rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-[var(--accent-hover)]"
             >
               View services &amp; guide prices
             </Link>
@@ -40,7 +42,9 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="mx-auto mt-16 max-w-4xl rounded-3xl border border-rose-100 bg-white/70 p-8">
+      <GroomingServices />
+
+      <section className="mx-auto mt-16 max-w-4xl rounded-3xl border border-[var(--accent)]/15 bg-white/70 p-8">
         <h2 className="font-display text-2xl font-bold">Why cat-only matters</h2>
         <p className="mt-3 text-sm leading-relaxed text-[var(--ink)]/75">
           Techniques, equipment, handling, and even salon scent cues differ from dog grooming. This layout uses a soft card stack

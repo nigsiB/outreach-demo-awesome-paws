@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --blush: #fff5f7;
-  --clay: #e8b4bc;
+  --blush: #fff8f9;
+  --clay: #e8a4b3;
   --ink: #3d2c36;
-  --paw: #7c5cbf;
+  /* Rich rose-coral accent — warmer and more distinctive than generic orange */
+  --accent: #c23d5a;
+  --accent-hover: #a8324a;
+  --accent-soft: rgba(194, 61, 90, 0.14);
 }
 
 body {

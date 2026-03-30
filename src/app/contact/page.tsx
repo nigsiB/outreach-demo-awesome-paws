@@ -8,7 +8,7 @@ export default function ContactPage() {
       <h1 className="font-display text-3xl font-bold">Enquire</h1>
       <p className="mt-2 text-sm text-[var(--ink)]/70">
         Email from public listing:{" "}
-        <a className="font-semibold text-[var(--paw)] underline" href="mailto:info@awesomepawscatgrooming.co.uk">
+        <a className="font-semibold text-[var(--accent)] underline" href="mailto:info@awesomepawscatgrooming.co.uk">
           info@awesomepawscatgrooming.co.uk
         </a>
       </p>

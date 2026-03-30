@@ -19,9 +19,9 @@ export default function PricesPage() {
         </a>
         . Phone from public site: <strong>07534 441810</strong>.
       </p>
-      <div className="mt-8 overflow-hidden rounded-2xl border border-rose-100 bg-white shadow-sm">
+      <div className="mt-8 overflow-hidden rounded-2xl border border-[var(--accent)]/15 bg-white shadow-sm">
         <table className="w-full text-left text-sm">
-          <thead className="bg-rose-50 text-xs uppercase tracking-wide text-[var(--ink)]/60">
+          <thead className="bg-[var(--accent-soft)] text-xs uppercase tracking-wide text-[var(--ink)]/60">
             <tr>
               <th className="px-4 py-3">Service</th>
               <th className="px-4 py-3">Guide</th>
@@ -29,12 +29,12 @@ export default function PricesPage() {
           </thead>
           <tbody>
             {rows.map((r) => (
-              <tr key={r.service} className="border-t border-rose-100">
+              <tr key={r.service} className="border-t border-[var(--accent)]/10">
                 <td className="px-4 py-4">
                   <p className="font-semibold">{r.service}</p>
                   <p className="text-xs text-[var(--ink)]/60">{r.note}</p>
                 </td>
-                <td className="px-4 py-4 font-display text-lg font-bold text-[var(--paw)]">{r.from}</td>
+                <td className="px-4 py-4 font-display text-lg font-bold text-[var(--accent)]">{r.from}</td>
               </tr>
             ))}
           </tbody>

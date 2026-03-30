@@ -21,14 +21,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={`${nunito.variable} ${quicksand.variable}`}>
       <body className="antialiased">
         <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-3 px-4 py-5">
-          <Link href="/" className="font-display text-xl font-bold tracking-tight text-[var(--paw)]">
+          <Link href="/" className="font-display text-xl font-bold tracking-tight text-[var(--accent)]">
             Awesome Paws
           </Link>
           <nav className="flex gap-4 text-sm font-semibold text-[var(--ink)]/80">
-            <Link href="/prices" className="rounded-full px-3 py-1 hover:bg-white/80">
+            <Link href="/prices" className="rounded-full px-3 py-1 hover:bg-white/80 hover:text-[var(--accent)]">
               Services &amp; prices
             </Link>
-            <Link href="/contact" className="rounded-full px-3 py-1 hover:bg-white/80">
+            <Link href="/contact" className="rounded-full px-3 py-1 hover:bg-white/80 hover:text-[var(--accent)]">
               Enquire
             </Link>
           </nav>
