@@ -5,12 +5,12 @@ import { GroomingServices } from "@/components/GroomingServices";
 
 export default function Page() {
   return (
-    <main className="px-4 pb-20">
-      <section className="mx-auto max-w-4xl overflow-hidden rounded-[2rem] bg-white shadow-xl shadow-[var(--accent-soft)]">
+    <main className="px-5 pb-20 lg:px-8">
+      <section className="mx-auto w-full max-w-7xl overflow-hidden rounded-[2rem] bg-white shadow-xl shadow-[var(--accent-soft)]">
         <div className="grid gap-0 md:grid-cols-2">
           <div className="relative aspect-square md:aspect-auto md:min-h-[420px]">
             <Image
-              src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&q=80"
+              src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=2200&q=90"
               alt="Cat portrait"
               fill
               className="object-cover"
@@ -44,7 +44,7 @@ export default function Page() {
 
       <GroomingServices />
 
-      <section className="mx-auto mt-16 max-w-4xl rounded-3xl border border-[var(--accent)]/15 bg-white/70 p-8">
+      <section className="mx-auto mt-16 w-full max-w-7xl rounded-3xl border border-[var(--accent)]/15 bg-white/70 p-8">
         <h2 className="font-display text-2xl font-bold">Why cat-only matters</h2>
         <p className="mt-3 text-sm leading-relaxed text-[var(--ink)]/75">
           Techniques, equipment, handling, and even salon scent cues differ from dog grooming. This layout uses a soft card stack

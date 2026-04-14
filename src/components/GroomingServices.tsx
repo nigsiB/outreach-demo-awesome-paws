@@ -21,7 +21,7 @@ const items: ServiceItem[] = [
     ring: "bg-rose-100",
     iconClass: "text-rose-600",
     imageSrc:
-      "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=85",
+      "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1800&q=90",
     imageAlt: "Relaxed cat portrait after grooming",
   },
   {
@@ -32,7 +32,7 @@ const items: ServiceItem[] = [
     ring: "bg-sky-100",
     iconClass: "text-sky-600",
     imageSrc:
-      "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=900&q=85",
+      "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=1800&q=90",
     imageAlt: "Soft cat resting indoors",
   },
   {
@@ -43,7 +43,7 @@ const items: ServiceItem[] = [
     ring: "bg-violet-100",
     iconClass: "text-violet-600",
     imageSrc:
-      "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=900&q=85",
+      "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1800&q=90",
     imageAlt: "Cat looking up",
   },
   {
@@ -54,7 +54,7 @@ const items: ServiceItem[] = [
     ring: "bg-amber-100",
     iconClass: "text-amber-700",
     imageSrc:
-      "https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?auto=format&fit=crop&w=900&q=85",
+      "https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?auto=format&fit=crop&w=1800&q=90",
     imageAlt: "Playful kitten",
   },
   {
@@ -65,7 +65,7 @@ const items: ServiceItem[] = [
     ring: "bg-emerald-100",
     iconClass: "text-emerald-700",
     imageSrc:
-      "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&q=85",
+      "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1800&q=90",
     imageAlt: "Senior cat resting",
   },
   {
@@ -76,14 +76,14 @@ const items: ServiceItem[] = [
     ring: "bg-fuchsia-100",
     iconClass: "text-fuchsia-700",
     imageSrc:
-      "https://images.unsplash.com/photo-1548681528-6a5c45b66b42?auto=format&fit=crop&w=900&q=85",
+      "https://images.unsplash.com/photo-1548681528-6a5c45b66b42?auto=format&fit=crop&w=1800&q=90",
     imageAlt: "Cat relaxing at home on soft furnishings",
   },
 ];
 
 export function GroomingServices() {
   return (
-    <section className="mx-auto mt-16 max-w-4xl px-1">
+    <section className="mx-auto mt-16 w-full max-w-7xl px-1">
       <div className="text-center">
         <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--accent)]">What we do</p>
         <h2 className="font-display mt-2 text-3xl font-bold text-[var(--ink)] md:text-4xl">Grooming services</h2>
@@ -92,7 +92,7 @@ export function GroomingServices() {
         </p>
       </div>
 
-      <div className="mt-10 grid gap-6 sm:grid-cols-2">
+      <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {items.map(({ title, description, Icon, ring, iconClass, imageSrc, imageAlt }) => (
           <article
             key={title}
