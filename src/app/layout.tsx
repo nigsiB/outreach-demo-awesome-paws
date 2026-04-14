@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Nunito, Quicksand } from "next/font/google";
 import { Facebook, Instagram, MessageCircleHeart } from "lucide-react";
@@ -23,8 +24,15 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="antialiased">
         <header className="border-b border-[var(--accent)]/10 bg-white/75 backdrop-blur">
           <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-5 lg:px-8">
-            <Link href="/" className="font-display text-xl font-bold tracking-tight text-[var(--accent)]">
-              Awesome Paws
+            <Link href="/" className="inline-flex items-center">
+              <Image
+                src="/awesome-paws-logo.png"
+                alt="Awesome Paws"
+                width={150}
+                height={48}
+                className="h-auto w-[150px] md:w-[170px]"
+                priority
+              />
             </Link>
             <nav className="flex gap-4 text-sm font-semibold text-[var(--ink)]/80">
               <Link href="/prices" className="rounded-full px-3 py-1 hover:bg-white/80 hover:text-[var(--accent)]">
@@ -49,7 +57,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <footer className="mt-20 border-t border-[var(--accent)]/15 bg-[var(--ink)] text-white">
           <div className="mx-auto grid w-full max-w-7xl gap-10 px-5 py-12 lg:grid-cols-3 lg:px-8">
             <div>
-              <p className="font-display text-2xl font-bold text-rose-200">Awesome Paws</p>
+              <Image src="/awesome-paws-logo.png" alt="Awesome Paws" width={170} height={55} className="h-auto w-[170px]" />
               <p className="mt-3 max-w-sm text-sm text-white/75">
                 Calm, cat-only grooming in Cranleigh. A gentle salon setup for feline comfort, confidence, and healthy coats.
               </p>

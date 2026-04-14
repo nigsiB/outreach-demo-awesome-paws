@@ -4,10 +4,10 @@
   --blush: #fff8f9;
   --clay: #e8a4b3;
   --ink: #3d2c36;
-  /* Rich rose-coral accent — warmer and more distinctive than generic orange */
-  --accent: #c23d5a;
-  --accent-hover: #a8324a;
-  --accent-soft: rgba(194, 61, 90, 0.14);
+  /* Warm burnt-orange accent tuned to the brand logo tones */
+  --accent: #c5763a;
+  --accent-hover: #ad622c;
+  --accent-soft: rgba(197, 118, 58, 0.16);
 }
 
 body {
