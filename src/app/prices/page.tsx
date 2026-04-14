@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import type { LucideIcon } from "lucide-react";
+import { CalendarClock, Scissors, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = { title: "Services & prices" };
 
-const rows = [
-  { service: "Wellness groom", note: "Bath, dry, brush-out, nails, ears", from: "From £—" },
-  { service: "Full coat work", note: "Dematting / coat reset where safe", from: "From £—" },
-  { service: "Maintenance plan", note: "Personalised revisit rhythm", from: "Ask" },
+const rows: { service: string; note: string; from: string; Icon: LucideIcon }[] = [
+  { service: "Wellness groom", note: "Bath, dry, brush-out, nails, ears", from: "From £—", Icon: Sparkles },
+  { service: "Full coat work", note: "Dematting / coat reset where safe", from: "From £—", Icon: Scissors },
+  { service: "Maintenance plan", note: "Personalised revisit rhythm", from: "Ask", Icon: CalendarClock },
 ];
 
 export default function PricesPage() {
@@ -18,7 +20,7 @@ export default function PricesPage() {
             src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=2200&q=90"
             alt="Cat being groomed with a brush"
             fill
-            className="object-cover"
+            className="object-cover object-center md:object-[center_22%]"
             sizes="100vw"
             priority
           />
@@ -52,8 +54,15 @@ export default function PricesPage() {
             {rows.map((r) => (
               <tr key={r.service} className="border-t border-[var(--accent)]/10">
                 <td className="px-4 py-4">
-                  <p className="font-semibold">{r.service}</p>
-                  <p className="text-xs text-[var(--ink)]/60">{r.note}</p>
+                  <div className="flex items-start gap-3">
+                    <span className="mt-0.5 inline-flex rounded-full bg-[var(--accent-soft)] p-2 text-[var(--accent)]">
+                      <r.Icon className="h-4 w-4" aria-hidden />
+                    </span>
+                    <div>
+                      <p className="font-semibold">{r.service}</p>
+                      <p className="text-xs text-[var(--ink)]/60">{r.note}</p>
+                    </div>
+                  </div>
                 </td>
                 <td className="px-4 py-4 font-display text-lg font-bold text-[var(--accent)]">{r.from}</td>
               </tr>
