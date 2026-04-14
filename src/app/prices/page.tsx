@@ -20,7 +20,7 @@ export default function PricesPage() {
             src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=2200&q=90"
             alt="Cat being groomed with a brush"
             fill
-            className="object-cover object-center md:object-[center_22%]"
+            className="object-cover object-[center_22%]"
             sizes="100vw"
             priority
           />
